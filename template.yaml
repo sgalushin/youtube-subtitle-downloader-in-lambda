@@ -17,3 +17,8 @@ Resources:
           Properties:
             Path: /{lang}/{videoId}
             Method: get
+
+Outputs:
+  APIAddress:
+    Description: "Endpoint URL"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
