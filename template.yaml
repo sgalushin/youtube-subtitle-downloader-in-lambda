@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Youtube Subtitles Downloader (uses youtube-dl)
+
+Resources:
+  DownloadSubtitlesFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./src
+      Timeout: 30
+      Handler: lambda_handler.handler
+      Runtime: python3.8
+      Events:
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /{lang}/{videoId}
+            Method: get

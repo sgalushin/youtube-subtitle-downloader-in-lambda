@@ -1,0 +1,6 @@
+.aws-sam
+venv
+samconfig.toml
+.idea
+
+.DS_Store
