@@ -9,7 +9,7 @@ def handler(event, context):
         return {
             "statusCode": 200,
             "headers": {
-                "Content-Type": "text/vtt"
+                "Content-Type": "text/vtt; charset=utf-8"
             },
             "body": result
         }
