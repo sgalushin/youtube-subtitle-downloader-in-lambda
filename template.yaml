@@ -9,6 +9,7 @@ Resources:
     Properties:
       CodeUri: ./src
       Timeout: 30
+      MemorySize: 512
       Handler: lambda_handler.handler
       Runtime: python3.8
       Events:
