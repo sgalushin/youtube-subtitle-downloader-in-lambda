@@ -13,12 +13,14 @@ Run `sam build && sam deploy --guided` in the project directory.
 
 ## Usage
 
-HTTP GET request: `ENDPOINT_URL/LANGUAGE/VIDEO_ID` where Endpoint URL is a value of an output item of a deployed stack.
+HTTP GET request: `ENDPOINT_URL/LANGUAGE_CODE/VIDEO_ID` where Endpoint URL is a value of an output item of a deployed stack.
 
 ### Example
 
 - Video: https://www.youtube.com/watch?v=hgg7lwi_xzc => `video id` is `hgg7lwi_xzc`
-- Langugage: german => language is `DE`
+- Language: german => language code (according to [ISO 639-1:2002](https://en.wikipedia.org/wiki/ISO_639-1)) is `de`
 - Endpoint URL: `https://75amc2323.execute-api.eu-west-1.amazonaws.com/Prod/`
 
-To download german subtitles for this video, perform a GET request `https://75amc2323.execute-api.eu-west-1.amazonaws.com/Prod/de/hgg7lwi_xzc`
+Thus, to download german subtitles for this video, perform a GET request `https://75amc2323.execute-api.eu-west-1.amazonaws.com/Prod/de/hgg7lwi_xzc`.
+
+## 
