@@ -9,7 +9,9 @@ def handler(event, context):
         return {
             "statusCode": 200,
             "headers": {
-                "Content-Type": "text/vtt; charset=utf-8"
+                "Content-Type": "text/vtt; charset=utf-8",
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "OPTIONS, GET"
             },
             "body": result
         }
@@ -17,7 +19,9 @@ def handler(event, context):
         return {
             "statusCode": "404",
             "headers": {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "OPTIONS, GET"
             },
             "body": ""
         }
