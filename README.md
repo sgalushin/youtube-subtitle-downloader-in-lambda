@@ -1,6 +1,8 @@
 A simple AWS Lambda for downloading YouTube subtitles.
 Uses [youtube-dl](https://github.com/ytdl-org/youtube-dl) underneath.
 
+Subtitles are cached for the lifetime of a Lambda instance.
+
 ## Deployment
 
 Requirements: 
