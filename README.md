@@ -23,4 +23,6 @@ HTTP GET request: `ENDPOINT_URL/LANGUAGE_CODE/VIDEO_ID` where Endpoint URL is a 
 
 Thus, to download german subtitles for this video, perform a GET request `https://75amc2323.execute-api.eu-west-1.amazonaws.com/Prod/de/hgg7lwi_xzc`.
 
-## 
+## License
+
+This project is licensed under the terms of the MIT license. See the [LICENSE](./LICENSE.txt) file.
